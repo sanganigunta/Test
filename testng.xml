@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel ="tests">
+
+<listeners>
+<listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
+<listener class-name="com.qa.opencart.listeners.TestAllureListener"/>
+</listeners>
+
+  <test  name="LoginPageTest"  verbose="4">
+    <classes>
+       <class name="com.qa.opencart.test.LoginPageTest"/>
+       </classes>
+       </test>
+       
+       <test name="ForgotPasswordTest"  verbose="4">
+       <classes>
+       <class name="com.qa.opencart.test.ForgotPasswordTest"/>
+       </classes>
+       </test>
+       
+       
+         <test name="CommonsPageTest"  verbose="4">
+       <classes>
+       <class name="com.qa.opencart.test.CommonsPageTest"/>
+       </classes>
+       </test>
+       
+         <test name="RegisterTest"  verbose="4">
+       <classes>
+       <class name="com.qa.opencart.test.RegisterTest"/>
+       </classes>
+       </test>
+       
+         <test name="AccountsPageTest"  verbose="4">
+       <classes>
+       <class name="com.qa.opencart.test.AccountsPageTest"/>
+       </classes>
+       </test>
+       
+         <test name="SearchResultPageTest"  verbose="4">
+       <classes>
+       <class name="com.qa.opencart.test.SearchResultPageTest"/>
+       </classes>
+       </test>
+     
+     
+ 
+</suite> <!-- Suite -->
